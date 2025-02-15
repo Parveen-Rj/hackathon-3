@@ -369,7 +369,7 @@ Swal.fire({
   showCancelButton : true,
   confirmButtonColor: "#3085d6",
   cancelButtonColor :"#d33",
-  confirmButtonText : "Yes, remove it!"
+  confirmButtonText : "Processed!"
   
 }).then((result) => {
   if(result.isConfirmed) {

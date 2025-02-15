@@ -6,18 +6,14 @@ import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import Link from "next/link";
 
-//import { slug } from "@/app/product/slug/page;
-//import product from "@/sanity/schemaTypes/product";
 import { Car } from "../../../../types/products";
 import { addToCart } from "@/app/actions/actions";
 import Swal from "sweetalert2";
-//import Car from "@/app/product/[slug]/page";
-//import CarPage from "../product/[slug]/page";
 
 const CarList = () => {
     const [car, setCar] = useState<Car[]>([])
 
-
+    
 
     useEffect(() =>{
         async function fetchCar() {
